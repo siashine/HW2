@@ -9,7 +9,6 @@ Console.Clear();
 Console.WriteLine("Введите число: ");
 int num = int.Parse(Console.ReadLine());
 string numText = Convert.ToString(num);
-// int thirdNum = num % 10;
 
 if (numText.Length > 2)
 {
