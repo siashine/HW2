@@ -8,5 +8,14 @@
 Console.Clear();
 Console.Write("Введите трехзначное число: ");
 int num = int.Parse(Console.ReadLine());
-int middleNum = num / 10 % 10;
-Console.WriteLine($"Вторая цифра вашего числа {middleNum}");
+string numText = Convert.ToString (num);
+if (numText.Length < 3 | numText.Length > 3)
+{
+  Console.WriteLine($"Число {num} не соответствует заданному");
+}
+else
+{
+  Console.WriteLine($"Вторая цифра вашего числа {num} - {numText[1]}");
+}
+
+
